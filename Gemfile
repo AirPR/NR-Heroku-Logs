@@ -10,5 +10,5 @@ gem 'fluent-plugin-heroku-http', git: 'https://github.com/AirPR/fluent-plugin-he
 # tracking ruby metrics in heroku
 gem "barnes"
 
-# try using async-http instead of default server
-gem "async-http"
+# required in fluentd RPC file 
+gem "webrick", "~> 1.7"

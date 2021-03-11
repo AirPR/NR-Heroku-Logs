@@ -9,29 +9,11 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    async (1.28.9)
-      console (~> 1.10)
-      nio4r (~> 2.3)
-      timers (~> 4.1)
-    async-http (0.54.1)
-      async (~> 1.25)
-      async-io (~> 1.28)
-      async-pool (~> 0.2)
-      protocol-http (~> 0.21.0)
-      protocol-http1 (~> 0.13.0)
-      protocol-http2 (~> 0.14.0)
-    async-io (1.30.2)
-      async (~> 1.14)
-    async-pool (0.3.5)
-      async (~> 1.25)
     barnes (0.0.9)
       multi_json (~> 1)
       statsd-ruby (~> 1.1)
     concurrent-ruby (1.1.8)
-    console (1.10.1)
-      fiber-local
     cool.io (1.7.1)
-    fiber-local (1.0.0)
     fluent-plugin-newrelic (1.1.10)
       fluentd (>= 1.0.0)
     fluentd (1.12.1)
@@ -48,35 +30,27 @@ GEM
     http_parser.rb (0.6.0)
     msgpack (1.4.2)
     multi_json (1.15.0)
-    nio4r (2.5.7)
-    protocol-hpack (1.4.2)
-    protocol-http (0.21.0)
-    protocol-http1 (0.13.2)
-      protocol-http (~> 0.19)
-    protocol-http2 (0.14.2)
-      protocol-hpack (~> 1.4)
-      protocol-http (~> 0.18)
     serverengine (2.2.3)
       sigdump (~> 0.2.2)
     sigdump (0.2.4)
     statsd-ruby (1.5.0)
     strptime (0.2.5)
-    timers (4.3.3)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2021.1)
       tzinfo (>= 1.0.0)
+    webrick (1.7.0)
     yajl-ruby (1.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  async-http
   barnes
   fluent-plugin-heroku-http!
   fluent-plugin-newrelic (~> 1.1.8)
   fluentd (~> 1.12.1)
+  webrick (~> 1.7)
 
 RUBY VERSION
    ruby 3.0.0p0
