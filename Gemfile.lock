@@ -9,6 +9,9 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    barnes (0.0.9)
+      multi_json (~> 1)
+      statsd-ruby (~> 1.1)
     concurrent-ruby (1.1.8)
     cool.io (1.7.1)
     fluent-plugin-newrelic (1.1.10)
@@ -26,9 +29,11 @@ GEM
       yajl-ruby (~> 1.0)
     http_parser.rb (0.6.0)
     msgpack (1.4.2)
+    multi_json (1.15.0)
     serverengine (2.2.3)
       sigdump (~> 0.2.2)
     sigdump (0.2.4)
+    statsd-ruby (1.5.0)
     strptime (0.2.5)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -40,6 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  barnes
   fluent-plugin-heroku-http!
   fluent-plugin-newrelic (~> 1.1.8)
   fluentd (~> 1.12.1)
