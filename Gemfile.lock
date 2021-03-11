@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/AirPR/fluent-plugin-heroku-http.git
-  revision: 5d80bca9a73a2fc1df3ecd610ee1860dbcbee36e
+  revision: 609f4095a0e59757c20bb493a466d18f1859ec5a
+  ref: 609f4095a0e59757c20bb493a466d18f1859ec5a
   specs:
     fluent-plugin-heroku-http (0.0.2)
       fluentd (>= 1.0)
